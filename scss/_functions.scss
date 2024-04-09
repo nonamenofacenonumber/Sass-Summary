@@ -1,0 +1,14 @@
+
+// function will return value (this is the difference between mixin and function
+
+
+@function sum($a, $b){
+    @return $a + $b;
+}
+
+
+
+
+
+
+

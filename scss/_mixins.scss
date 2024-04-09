@@ -1,0 +1,36 @@
+
+// mixin doesn't have any return value (this is the difference between mixin and function
+
+
+@mixin myborder1($border) {      // @include myborder1(...);
+    -webkit-border: $border;
+    border: $border;
+}
+
+@mixin myborder2($side,$value) {      // @include myborder2(...);
+    @if $side == 'all' {     // Condition
+        border: $value;
+    } @else {
+        border-#{$side}: $value;
+    }
+}
+
+
+@mixin background-image($url, $repeat: repeat, $position: auto auto) {      // @include background-image(.., .., ..);
+    backround-image: url($url);
+    background-repeat:$repeat;
+    background-position: $position;
+}
+
+
+@mixin flex {       // @include flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;    
+}
+
+
+
+
+

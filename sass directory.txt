@@ -1,0 +1,9 @@
+
+Once Compile scss to css file:
+sass style.scss style.css
+
+Compile scss file to css file (file to file):
+sass --watch scss\style.scss:css\style.css
+
+Compile scss to css (folder to folder with the same name)
+sass --watch scss:css

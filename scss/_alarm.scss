@@ -1,0 +1,52 @@
+
+//inheritance (this class doesn't compile)
+%message1{
+    border: 2px solid;
+    padding: 2rem;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 10px;
+}
+
+
+//inheritance (this class will compile)
+.message2{
+    border: 2px solid;
+    padding: 2rem;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 10px;
+}
+
+
+
+
+.success-message{
+    @extend %message1;           //inheritance
+    border-color: green;
+    color: white;
+    background-color: rgb(113, 228, 142);
+}
+
+
+.warning-message{
+    @extend %message1;           //inheritance
+    border-color: yellow;
+    color: black;
+    background-color: rgb(228, 226, 113);
+}
+
+
+.error-message{
+    @extend .message2;           //inheritance
+    border-color: red;
+    color: white;
+    background-color: #e06b6b;
+}
+
+
+
+
+
